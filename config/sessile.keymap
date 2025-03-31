@@ -18,7 +18,6 @@
 // #include "taps.dtsi"
 // #include "combos.dtsi"
 
-
 / {
 	keymap {
 		compatible = "zmk,keymap";
