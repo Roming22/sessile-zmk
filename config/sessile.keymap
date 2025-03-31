@@ -24,7 +24,7 @@
 		caster_layer {
 			bindings = <
 			&kp B	 &kp F  &kp D      &kp L     &kp P     	 &kp O       &kp U    &kp Y  	
-			&kp C  	 &kp S 	&kp T  	   &kp R     &kp N 		 &kp A       &kp I    &kp H
+			&hl LCTRL C  &hl LALT S 	&hl LGUI T  	 &hls LSHFT R       &hrs RSHFT N &hr RGUI A    &hr RALT I  &hr RCTRL H
 			&kp V	 &kp G 	&kp M      &kp W     &kp DOT     &kp COMMA   &kp SQT  &kp K 		 
 							&mqt FUN BSPC   &mqt NUM SPACE &kp E       &kp RET
 			>;

@@ -2,6 +2,10 @@
 #define RPI 175
 #define RPI_LONG 280
 
+// Visit https://github.com/urob/zmk-helpers/blob/main/docs/core_helpers.md#zmk_combo for more information on the zmk_combo macro.
+
+// ZMK_COMBO(name, bindings, keypos, layers, timeout, prior_idle, extra)
+
 ZMK_COMBO(num_word, &num_word NUM, LM4 LM1, 0, 50, RPI_LONG)
 ZMK_COMBO(caps_lock, &kp CAPS, LM1 RM1, 0, 50, RPI)
 ZMK_COMBO(caps_word, &caps_word, RM1 RM4, 0, 50, RPI_LONG)
