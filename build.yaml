@@ -1,0 +1,29 @@
+include:
+  - board: seeeduino_xiao_ble
+    shield: sessile_central
+    snippet: studio-rpc-usb-uart
+    artifact-name: sessile_central
+    
+# If you want to save battery, flash sessile_peripheral to the board and use the sessile_dongle to either a xiao nrf52840 or a nice nano/super-mini.
+
+  # - board: seeeduino_xiao_ble
+  #   shield: sessile_peripheral
+  #   artifact-name: sessile_peripheral
+
+  # - board: nice_nano_v2
+  #   shield: sessile_dongle
+  #   snippet: studio-rpc-usb-uart
+  #   artifact-name: sessile_dongle
+
+  # - board: seeduino_xiao_ble
+  #   shield: sessile_dongle
+  #   snippet: studio-rpc-usb-uart
+  #   artifact-name: sessile_dongle
+
+  # - board: seeeduino_xiao_ble
+  #   shield: settings_reset
+  #   artifact-name: settings_reset_xiao
+
+  # - board: nice_nano_v2
+  #   shield: settings_reset
+  #   artifact-name: settings_reset_nnv2
