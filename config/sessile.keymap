@@ -6,6 +6,7 @@
 
 #define ALPHA 0
 #define FN_NUM 1
+#define SYMBOL 2
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -25,14 +26,22 @@
 			&none		&none			&none			&none					&none			&none			&none			&none
 			&none		&mt LCTRL P  	&mt LALT C 		&mt LSHFT N  	 		&mt RSHFT R		&mt RALT H		&mt RCTRL L		&none
 			&kp D		&kp S			&kp A			&kp E					&kp I			&kp O			&kp T 			&kp G
-										&lt FN_NUM SPACE &kp TAB 				&kp LGUI		&kp RET
+										&lt FN_NUM SPACE &kp TAB 				&kp LGUI		&lt SYMBOL RET
 			>;
 		};
 		fnnum_layer {
 			bindings = <
 			&none		&none			&none			&none					&none			&none			&none			&none
-			&none		&mt LCTRL F1  	&mt LALT F2		&mt LSHFT F3  	 		&mt RSHFT N7	&mt RALT N8	&mt RCTRL N9	&none
-			&none		&kp F10			&kp F11			&kp F12					&kp N0		&kp N1		&kp N2		&kp DOT
+			&none		&mt LCTRL F1  	&mt LALT F2		&mt LSHFT F3  	 		&mt RSHFT N7	&mt RALT N8	&mt RCTRL N9		&none
+			&none		&kp F10			&kp F11			&kp F12					&kp N0			&kp N1			&kp N2			&kp DOT
+										&kp SPACE   	&kp TAB 				&kp LGUI		&kp RET
+			>;
+		};
+		symbol_layer {
+			bindings = <
+			&none		&none			&none			&none					&none			&none			&none			&none
+			&none		&mt LCTRL GRAVE	&mt LALT BSLH	&mt LSHFT UNDER			&mt RSHFT MINUS	&mt RALT SLASH	&mt RCTRL EQUAL	&none
+			&none		&kp AT			&kp DOLLAR		&kp AMPERSAND			&kp DOT			&kp COMMA		&kp SQT			&none
 										&kp SPACE   	&kp TAB 				&kp LGUI		&kp RET
 			>;
 		};
