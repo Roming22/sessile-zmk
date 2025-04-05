@@ -8,6 +8,7 @@
 #define FN_NUM 1
 #define SYMBOL 2
 #define SYSTEM 3
+#define SHORTCUT 4
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -24,16 +25,16 @@
 		compatible = "zmk,keymap";
 		alpha_layer {
 			bindings = <
-			&none		&none			&none			&none					&none			&none			&none			&none
-			&none		&mt LCTRL P  	&mt LALT C 		&mt LSHFT N  	 		&mt RSHFT R		&mt RALT H		&mt RCTRL L		&none
-			&kp D		&lt SYSTEM S	&kp A			&kp E					&kp I			&kp O			&lt SYSTEM T	&kp G
-										&lt FN_NUM SPACE &kp TAB 				&kp LGUI		&lt SYMBOL RET
+			&none			&none			&none			&none					&none			&none			&none			&none
+			&none			&mt LCTRL P  	&mt LALT C 		&mt LSHFT N  	 		&mt RSHFT R		&mt RALT H		&mt RCTRL L		&none
+			&lt SHORTCUT D	&lt SYSTEM S	&kp A			&kp E					&kp I			&kp O			&lt SYSTEM T	&lt SHORTCUT G
+											&lt FN_NUM SPACE &kp TAB 				&kp LGUI		&lt SYMBOL RET
 			>;
 		};
 		fnnum_layer {
 			bindings = <
 			&none		&none			&none			&none					&none			&none			&none			&none
-			&none		&mt LCTRL F1  	&mt LALT F2		&mt LSHFT F3  	 		&mt RSHFT N7	&mt RALT N8	&mt RCTRL N9		&none
+			&none		&mt LCTRL F1  	&mt LALT F2		&mt LSHFT F3  	 		&mt RSHFT N7	&mt RALT N8		&mt RCTRL N9	&none
 			&none		&kp F10			&kp F11			&kp F12					&kp N0			&kp N1			&kp N2			&kp DOT
 										&kp SPACE   	&kp TAB 				&kp LGUI		&kp RET
 			>;
@@ -52,6 +53,14 @@
 			&none		&mt LCTRL ESC	&mt LALT PG_UP	&mt LSHFT PSCRN			&kp BSPC		&kp UP			&kp DEL			&none
 			&none		&kp HOME		&kp PG_DN		&kp END					&kp LEFT		&kp DOWN		&kp RIGHT		&none
 										&kp SPACE   	&kp TAB 				&kp LGUI		&kp RET
+			>;
+		};
+		shortcut_layer {
+			bindings = <
+			&none		&none			&none			&none					&none				&none				&none				&none
+			&none		&mt C_RW C_PREV	&kp C_PP		&mt C_FF C_NEXT			&kp LG(PG_UP)		&kp LG(LC(UP))		&kp LG(PG_DN)		&none
+			&none		&kp C_VOL_DN	&kp C_MUTE		&kp C_VOL_UP			&kp LG(LS(LEFT))	&kp LG(LC(DOWN))	&kp LG(LS(RIGHT))	&kp LG(UP)
+										&kp SPACE   	&kp TAB 				&kp LGUI			&kp RET
 			>;
 		};
 	};
