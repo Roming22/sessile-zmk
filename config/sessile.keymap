@@ -17,7 +17,7 @@
 #include "28.h"
 #include "zmk-helpers/helper.h"
 #include <behaviors/num_word.dtsi>
-// #include "taps.dtsi"
+#include "behaviors.dtsi"
 #include "combos.dtsi"
 
 / {
@@ -41,10 +41,10 @@
 		};
 		symbol_layer {
 			bindings = <
-			&none		&none			&none			&none					&none			&none			&none			&none
-			&none		&mt LCTRL GRAVE	&mt LALT BSLH	&mt LSHFT UNDER			&mt RSHFT MINUS	&mt RALT SLASH	&mt RCTRL EQUAL	&none
-			&kp AT		&kp HASH		&kp DOLLAR		&kp AMPERSAND			&kp DOT			&kp COMMA		&kp SQT			&none
-										&kp SPACE   	&kp TAB 				&kp LGUI		&kp RET
+			&none		&none			&none				&none							&none					&none				&none					&none
+			&none		&mt LCTRL GRAVE	&mt_bslh LALT &none	&mt_under LSHFT &none			&mt_minus RSHFT &none	&mt_slsh RALT &none	&mt_equal RCTRL &none	&none
+			&kp AT		&kp HASH		&dollar				&ampersand						&dot					&comma				&kp SQT					&none
+										&kp SPACE   		&kp TAB 						&kp LGUI				&kp RET
 			>;
 		};
 		system_layer {
