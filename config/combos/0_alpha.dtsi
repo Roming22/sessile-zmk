@@ -1,0 +1,17 @@
+/* 
+ZMK_COMBO(name,         bindings,   keypos,     layers, timeout,    prior_idle, extra)
+*/
+ZMK_COMBO(caps_word,    &caps_word, LM1 RM1,    0,      50,         RPI_LONG)
+
+ZMK_COMBO(x,            &kp X,      LM3 LM2,    0,      50, RPI_SHORT)
+ZMK_COMBO(z,            &kp Z,      LM3 LM1,    0,      50, RPI_SHORT)
+ZMK_COMBO(v,            &kp V,      LM2 LM1,    0,      50, RPI_SHORT)
+ZMK_COMBO(k,            &kp K,      RM1 RM2,    0,      50, RPI_SHORT)
+ZMK_COMBO(j,            &kp J,      RM1 RM3,    0,      50, RPI_SHORT)
+ZMK_COMBO(q,            &kp Q,      RM2 RM3,    0,      50, RPI_SHORT)
+ZMK_COMBO(f,            &kp F,      LB3 LB2,    0,      50, RPI_SHORT)
+ZMK_COMBO(b,            &kp B,      LB3 LB1,    0,      50, RPI_SHORT)
+ZMK_COMBO(u,            &kp U,      LB2 LB1,    0,      50, RPI_SHORT)
+ZMK_COMBO(y,            &kp Y,      RB1 RB2,    0,      50, RPI_SHORT)
+ZMK_COMBO(w,            &kp W,      RB1 RB3,    0,      50, RPI_SHORT)
+ZMK_COMBO(m,            &kp M,      RB2 RB3,    0,      50, RPI_SHORT)

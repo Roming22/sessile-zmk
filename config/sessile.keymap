@@ -21,12 +21,12 @@
 / {
 	keymap {
 		compatible = "zmk,keymap";
-		caster_layer {
+		alpha_layer {
 			bindings = <
-			&kp B	 &kp F  &kp D      &kp L     &kp P     	 &kp O       &kp U    &kp Y  	
-			&hl LCTRL C  &hl LALT S 	&hl LGUI T  	 &hls LSHFT R       &hrs RSHFT N &hr RGUI A    &hr RALT I  &hr RCTRL H
-			&kp V	 &kp G 	&kp M      &kp W     &kp DOT     &kp COMMA   &kp SQT  &kp K 		 
-							&mqt FUN BSPC   &mqt NUM SPACE &kp E       &kp RET
+			&none		&none			&none			&none					&none			&none			&none			&none
+			&none		&mt LCTRL P  	&mt LALT C 		&mt LSHFT N  	 		&mt RSHFT R		&mt RALT H		&mt RCTRL L		&none
+			&kp D		&kp S			&kp A			&kp E					&kp I			&kp O			&kp T 		&kp G 		 
+										&kp SPACE   	&kp TAB 				&kp LGUI		&kp RET
 			>;
 		};
 		num_layer {
