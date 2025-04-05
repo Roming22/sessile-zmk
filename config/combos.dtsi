@@ -7,3 +7,4 @@
 // ZMK_COMBO(name, bindings, keypos, layers, timeout, prior_idle, extra)
 
 #include "combos/0_alpha.dtsi"
+#include "combos/1_fn_num.dtsi"
