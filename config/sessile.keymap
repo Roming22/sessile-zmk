@@ -7,6 +7,7 @@
 #define ALPHA 0
 #define FN_NUM 1
 #define SYMBOL 2
+#define SYSTEM 3
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -25,7 +26,7 @@
 			bindings = <
 			&none		&none			&none			&none					&none			&none			&none			&none
 			&none		&mt LCTRL P  	&mt LALT C 		&mt LSHFT N  	 		&mt RSHFT R		&mt RALT H		&mt RCTRL L		&none
-			&kp D		&kp S			&kp A			&kp E					&kp I			&kp O			&kp T 			&kp G
+			&kp D		&lt SYSTEM S	&kp A			&kp E					&kp I			&kp O			&lt SYSTEM T	&kp G
 										&lt FN_NUM SPACE &kp TAB 				&kp LGUI		&lt SYMBOL RET
 			>;
 		};
@@ -41,7 +42,15 @@
 			bindings = <
 			&none		&none			&none			&none					&none			&none			&none			&none
 			&none		&mt LCTRL GRAVE	&mt LALT BSLH	&mt LSHFT UNDER			&mt RSHFT MINUS	&mt RALT SLASH	&mt RCTRL EQUAL	&none
-			&none		&kp AT			&kp DOLLAR		&kp AMPERSAND			&kp DOT			&kp COMMA		&kp SQT			&none
+			&kp AT		&kp HASH		&kp DOLLAR		&kp AMPERSAND			&kp DOT			&kp COMMA		&kp SQT			&none
+										&kp SPACE   	&kp TAB 				&kp LGUI		&kp RET
+			>;
+		};
+		system_layer {
+			bindings = <
+			&none		&none			&none			&none					&none			&none			&none			&none
+			&none		&mt LCTRL ESC	&mt LALT PG_UP	&mt LSHFT PSCRN			&kp BSPC		&kp UP			&kp DEL			&none
+			&none		&kp HOME		&kp PG_DN		&kp END					&kp LEFT		&kp DOWN		&kp RIGHT		&none
 										&kp SPACE   	&kp TAB 				&kp LGUI		&kp RET
 			>;
 		};
