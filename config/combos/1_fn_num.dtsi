@@ -1,0 +1,13 @@
+/* 
+ZMK_COMBO(name,         bindings,   keypos,     layers, timeout,    prior_idle, extra)
+*/
+ZMK_COMBO(f4,           &kp F4,     LM3 LM2,    FN_NUM,  50,        RPI_SHORT)
+ZMK_COMBO(f6,           &kp F6,     LM3 LM1,    FN_NUM,  50,        RPI_SHORT)
+ZMK_COMBO(f5,           &kp F5,     LM2 LM1,    FN_NUM,  50,        RPI_SHORT)
+ZMK_COMBO(kp5,          &kp N5,     RM1 RM2,    FN_NUM,  50,        RPI_SHORT)
+ZMK_COMBO(kp6,          &kp N6,     RM2 RM3,    FN_NUM,  50,        RPI_SHORT)
+ZMK_COMBO(f7,           &kp F7,     LB3 LB2,    FN_NUM,  50,        RPI_SHORT)
+ZMK_COMBO(f9,           &kp F9,     LB3 LB1,    FN_NUM,  50,        RPI_SHORT)
+ZMK_COMBO(f8,           &kp F8,     LB2 LB1,    FN_NUM,  50,        RPI_SHORT)
+ZMK_COMBO(kp3,          &kp N3,     RB1 RB2,    FN_NUM,  50,        RPI_SHORT)
+ZMK_COMBO(kp4,          &kp N4,     RB2 RB3,    FN_NUM,  50,        RPI_SHORT)
