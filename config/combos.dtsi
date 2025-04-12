@@ -1,10 +1,6 @@
-#define RPI_SHORT 50
-#define RPI 175
-#define RPI_LONG 280
+#define COMBO_PI 20
 
 // Visit https://github.com/urob/zmk-helpers/blob/main/docs/core_helpers.md#zmk_combo for more information on the zmk_combo macro.
-
-// ZMK_COMBO(name, bindings, keypos, layers, timeout, prior_idle, extra)
 
 #include "combos/0_alpha.dtsi"
 #include "combos/1_fn_num.dtsi"
