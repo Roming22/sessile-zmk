@@ -5,3 +5,4 @@
 #include "combos/0_alpha.dtsi"
 #include "combos/1_fn_num.dtsi"
 #include "combos/2_symbol.dtsi"
+#include "combos/5_gaming.dtsi"
