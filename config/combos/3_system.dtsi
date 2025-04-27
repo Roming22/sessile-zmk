@@ -1,0 +1,9 @@
+/* 
+ZMK_COMBO(name,         bindings,       keypos,     layers, timeout,    prior_idle)
+*/
+ZMK_COMBO(mod3_lc_la,   &kp LC(LALT),   LM3 LM2,    SYMBOL, 50,         COMBO_PI)
+ZMK_COMBO(mod3_ls_lc,   &kp LS(LCTRL),  LM3 LM1,    SYMBOL, 50,         COMBO_PI)
+ZMK_COMBO(mod3_ls_la,   &kp LS(LALT),   LM2 LM1,    SYMBOL, 50,         COMBO_PI)
+ZMK_COMBO(mod3_rs_la,   &kp RS(RALT),   RM1 RM2,    SYMBOL, 50,         COMBO_PI)
+ZMK_COMBO(mod3_rs_lc,   &kp RS(RCTRL),  RM1 RM3,    SYMBOL, 50,         COMBO_PI)
+ZMK_COMBO(mod3_rc_ra,   &kp RC(RALT),   RM2 RM3,    SYMBOL, 50,         COMBO_PI)
