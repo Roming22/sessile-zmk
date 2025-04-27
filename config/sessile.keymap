@@ -9,6 +9,7 @@
 #define SYMBOL 2
 #define SYSTEM 3
 #define SHORTCUT 4
+#define GAMING 5
 
 #include <behaviors.dtsi>
 #include <behaviors/num_word.dtsi>
@@ -61,6 +62,14 @@
 			&none		&mt C_RW C_PREV	&kp C_PP		&mt C_FF C_NEXT			&kp LG(PG_UP)		&kp LG(LC(UP))		&kp LG(PG_DN)		&none
 			&none		&kp C_VOL_DN	&kp C_MUTE		&kp C_VOL_UP			&kp LG(LS(LEFT))	&kp LG(LC(DOWN))	&kp LG(LS(RIGHT))	&kp LG(UP)
 										&kp SPACE   	&kp TAB 				&kp LGUI			&kp RET
+			>;
+		};
+		gaming_layer {
+			bindings = <
+			&none		&none		&none		&none				&none		&none		&none		&none
+			&none		&kp Q		&kp W		&kp E				&kp Z		&kp C		&kp V		&none
+			&kp LSHFT	&kp A		&kp S		&kp D				&kp B		&kp G		&kp N		&kp ESC
+									&kp SPACE	&kp TAB				&kp BSPC	&kp RET
 			>;
 		};
 	};

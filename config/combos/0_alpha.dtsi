@@ -15,3 +15,4 @@ ZMK_COMBO(u,            &kp U,              LB2 LB1,    ALPHA,  50,         COMB
 ZMK_COMBO(y,            &kp Y,              RB1 RB2,    ALPHA,  50,         COMBO_PI)
 ZMK_COMBO(w,            &kp W,              RB1 RB3,    ALPHA,  50,         COMBO_PI)
 ZMK_COMBO(m,            &kp M,              RB2 RB3,    ALPHA,  50,         COMBO_PI)
+ZMK_COMBO(gaming_layer, &to GAMING,         LB4 RB4,    ALPHA,  50,         COMBO_PI)

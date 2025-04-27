@@ -1,0 +1,7 @@
+/* 
+ZMK_COMBO(name,         bindings,   keypos,     layers, timeout,    prior_idle)
+*/
+
+ZMK_COMBO(5_f,          &kp F,      LM3 LM1,    GAMING, 50,         COMBO_PI)
+ZMK_COMBO(5_r,          &kp R,      LB3 LB1,    GAMING, 50,         COMBO_PI)
+ZMK_COMBO(alpha_layer,  &to ALPHA,  LB4 RB4,    GAMING, 50,         COMBO_PI)
