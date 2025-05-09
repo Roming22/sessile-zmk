@@ -40,7 +40,7 @@
             bindings = <&kp EQUAL>, <&kp PERCENT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-		dollar: dollar_excl {
+        dollar: dollar_excl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOLLAR>, <&kp EXCLAMATION>;
@@ -65,6 +65,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         // Custom Hold-Tap for custom keys
+        mt_caps: mt_capsword_capslock {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <TAP_TERM>;
+            bindings = <&kp>, <&caps_word>;
+            display-name = "Mod-Tap caps";
+        };
         mt_bslh: mt_backslash_pipe {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
