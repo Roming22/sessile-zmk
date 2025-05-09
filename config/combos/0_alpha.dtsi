@@ -1,7 +1,7 @@
 /* 
 ZMK_COMBO(name,         bindings,           keypos,     layers, timeout,    prior_idle)
 */
-ZMK_COMBO(caps_word,    &caps_word,         LM1 RM1,    ALPHA,  50,         COMBO_PI)
+ZMK_COMBO(caps_word,    &mt_caps CAPS   0,  LM1 RM1,    ALPHA,  50,         COMBO_PI)
 
 ZMK_COMBO(x,            &mt LC(LALT)    X,  LM3 LM2,    ALPHA,  50,         COMBO_PI)
 ZMK_COMBO(z,            &mt LS(LCTRL)   Z,  LM3 LM1,    ALPHA,  50,         COMBO_PI)
