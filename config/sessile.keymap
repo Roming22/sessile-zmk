@@ -60,7 +60,7 @@
 			bindings = <
 			&none		&none			&none			&none					&none				&none				&none				&none
 			&none		&mt C_RW C_PREV	&kp C_PP		&mt C_FF C_NEXT			&kp LG(LS(LEFT))	&kp LG(PG_UP)		&kp LG(LS(RIGHT))	&none
-			&none		&kp C_VOL_DN	&kp C_MUTE		&kp C_VOL_UP			&kp LG(LEFT)		&kp LG(PG_DN)		&kp LG(RIGHT)		&kp LG(UP)
+			&none		&kp C_VOL_DN	&kp C_MUTE		&kp C_VOL_UP			&kp LG(LEFT)		&kp LG(PG_DN)		&kp LG(RIGHT)		&kp LA(F10)
 										&kp SPACE   	&kp TAB 				&kp LGUI			&kp RET
 			>;
 		};
