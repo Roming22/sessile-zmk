@@ -27,8 +27,8 @@
 		alpha_layer {
 			bindings = <
 			&none			&none			&none			&none					&none			&none			&none			&none
-			&none			&mt LCTRL P  	&mt LALT C 		&mt LSHFT N  	 		&mt RSHFT R		&mt RALT H		&mt RCTRL L		&none
-			&lt SHORTCUT D	&lt SYSTEM S	&kp A			&kp E					&kp I			&kp O			&lt SYSTEM T	&lt SHORTCUT G
+			&none			&mt LCTRL D  	&mt LALT C 		&mt LSHFT R  	 		&mt RSHFT N		&mt RALT H		&mt RCTRL L		&none
+			&lt SHORTCUT P	&lt SYSTEM S	&kp A			&kp E					&kp I			&kp O			&lt SYSTEM T	&lt SHORTCUT G
 											&lt FN_NUM SPACE &kp TAB 				&kp LGUI		&lt SYMBOL RET
 			>;
 		};
