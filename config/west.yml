@@ -13,7 +13,7 @@ manifest:
       import: app/west.yml
     - name: sessile
       remote: willpuckett
-      revision: main
+      revision: zmk
       import: config/west.yml
   self:
     path: config
