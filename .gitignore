@@ -1,0 +1,15 @@
+# Firmware copied out of the container
+/out/
+
+# West workspace (if someone initializes it in-repo instead of /zmk)
+.west/
+/zmk/
+/zephyr/
+/modules/
+/bootloader/
+/tools/
+/sessile/
+/zmk-auto-layer/
+/zmk-helpers/
+/zmk-antecedent-morph/
+/build/

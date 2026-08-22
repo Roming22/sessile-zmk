@@ -1,0 +1,47 @@
+{
+  "name": "Sessile ZMK",
+  "image": "docker.io/zmkfirmware/zmk-dev-arm:stable",
+  "runArgs": ["--security-opt", "label=disable"],
+  "workspaceFolder": "/workspaces/sessile-zmk",
+  "containerEnv": {
+    "WORKSPACE_FOLDER": "${containerWorkspaceFolder}",
+    "ZMK_WORKSPACE": "/zmk",
+    "ZMK_CONFIG": "/zmk/config",
+    "ZEPHYR_BASE": "/zmk/zephyr",
+    "ZEPHYR_SDK_INSTALL_DIR": "/opt/zephyr-sdk-0.16.9",
+    "CCACHE_DIR": "/zmk/.ccache",
+    "PROMPT_COMMAND": "history -a"
+  },
+  "mounts": [
+    "type=volume,source=sessile-zmk-west,target=/zmk"
+  ],
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "ln -sfn \"${containerWorkspaceFolder}/config\" /zmk/config",
+  "waitFor": "postCreateCommand",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "plorefice.devicetree"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "files.associations": {
+          "*.keymap": "dts",
+          "*.overlay": "dts",
+          "*.dtsi": "dts"
+        },
+        "C_Cpp.default.includePath": [
+          "/zmk/zmk/app/include",
+          "/zmk/zmk-helpers/include",
+          "${workspaceFolder}/config"
+        ],
+        "C_Cpp.default.compileCommands": "/zmk/build/sessile_central/compile_commands.json"
+      }
+    }
+  },
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "4gb"
+  }
+}

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-# This is a script to build ZMK locally on MacOS. You'll need to [install ZMK](https://zmk.dev/docs/development/local-toolchain/setup/native) first. 
+# This is a script to build ZMK locally on MacOS. You'll need to [install ZMK](https://zmk.dev/docs/development/local-toolchain/setup/native) first.
+# For containerized builds (Linux/Cursor Dev Container), use .devcontainer/ and ./scripts/build.sh instead.
 # It is much easier to use the github action which will just work when you push the repo, but it is a little slower if you're doing lots of frequent builds. You can also make changes in the gui (zmk studio).
 # Extra modules need to be installed before running this script, by git cloning them into ~/Public. 
 
